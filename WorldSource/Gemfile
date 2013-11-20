@@ -6,6 +6,11 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+group :production do
+# Postgrefor Heroku
+gem 'pg'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -23,6 +28,9 @@ gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+
+# Twitter streaming API Gem
+gem 'tweetstream',  '~> 2.5.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -43,3 +51,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Ruby declaration for Heroku
+ruby "2.0.0"
