@@ -1,10 +1,6 @@
 class TweetsController < ApplicationController
   require 'tweetstream'
 
-  def new
-    @tweet = Tweet.new
-  end
-
   def home
     TweetStream.configure do |config|
       config.consumer_key       = "VvLgP2YlmkiSFpnCRvK4g"
